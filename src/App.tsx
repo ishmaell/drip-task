@@ -6,7 +6,9 @@ function App() {
   const client = new QueryClient();
   return (
     <QueryClientProvider client={client}>
-      <Posts />
+      <div className="max-w-[960px] m-auto">
+        <Posts />
+      </div>
     </QueryClientProvider>
   );
 }
